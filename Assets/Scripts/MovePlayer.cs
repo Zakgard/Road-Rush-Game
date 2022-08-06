@@ -22,7 +22,7 @@ public class MovePlayer : MonoBehaviour
         get
         {
             var horizontal = Input.GetAxis("Horizontal");           
-            return new Vector3(horizontal*0.5f, 0.0f, 1);
+            return new Vector3(horizontal*0.5f, 0.0f, 0);
         }
     }
 }

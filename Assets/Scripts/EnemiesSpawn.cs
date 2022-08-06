@@ -9,7 +9,7 @@ public class EnemiesSpawn : MonoBehaviour
 
     private Vector3 _enemySpawnPositon;
 
-    private float[] _coordinatesList=new float[3]
+    private float[] _xCoordinatesList=new float[3]
     {
         -7,0,7
     };
@@ -26,7 +26,7 @@ public class EnemiesSpawn : MonoBehaviour
 
     private Vector3 GetCoordinatesForEnemySpawn()
     {
-        _enemySpawnPositon = new Vector3(_coordinatesList[Random.Range(0, 4)], 0, _player.transform.position.z + 100);
+        _enemySpawnPositon = new Vector3(_xCoordinatesList[Random.Range(0, 4)], 0, _player.transform.position.z + 200);
         return _enemySpawnPositon;
     }
 
