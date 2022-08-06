@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3955367445042417630, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+      propertyPath: _force
+      value: 24000
+      objectReference: {fileID: 0}
+    - target: {fileID: -3955367445042417630, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+      propertyPath: _horizontalMultiplier
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 187330664660230373, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -59,24 +67,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Free Racing Car Gray Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7495443279060062592, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2191245959367998922, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
---- !u!1 &7282772008711335601 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3311311803080157842, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
-  m_PrefabInstance: {fileID: 5252813465529287715}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &-1042511778630659837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7282772008711335601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e33c98b64a9fe1b46bf17c8ef1692031, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _player: {fileID: 7282772008711335601}
-  _speed: 20

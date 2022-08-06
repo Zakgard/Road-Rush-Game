@@ -1,17 +1,28 @@
 using UnityEngine;
 
-
 public class MovePlayer : MonoBehaviour
 {
     [Header("Объект игрок")]
     [SerializeField] private GameObject _player;
 
-    [Header("Скорость движения")]
-    [SerializeField] private float _speed=20;
-    private void FixedUpdate()
+    private Rigidbody _playerRigidbody;   
+
+    private void Start()
     {
-        _player.transform.Translate(new Vector3(0, 0, _speed * Time.deltaTime));
+        _playerRigidbody = GetComponent<Rigidbody>();
     }
 
+    private void FixedUpdate()
+    {        
+        _playerRigidbody.MovePosition(_playerRigidbody.position + _movementVector);        
+    }
 
+    private Vector3 _movementVector
+    {
+        get
+        {
+            var horizontal = Input.GetAxis("Horizontal");           
+            return new Vector3(horizontal*0.5f, 0.0f, 1);
+        }
+    }
 }

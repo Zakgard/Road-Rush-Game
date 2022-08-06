@@ -132,8 +132,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 475078350}
-  - component: {fileID: 475078349}
   - component: {fileID: 475078351}
+  - component: {fileID: 475078352}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -141,22 +141,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &475078349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 475078348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 401396a6cff0bb54b904b2877611872f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _enemiesList:
-  - {fileID: 4426297765356118169, guid: 4d1ee784ac0f45949ba6587910362951, type: 3}
-  _player: {fileID: 0}
-  _enemiesCount: 0
 --- !u!4 &475078350
 Transform:
   m_ObjectHideFlags: 0
@@ -189,6 +173,22 @@ MonoBehaviour:
   - {fileID: 6645616114513181105, guid: 62010132604e8c94d96b4cb4fe6d3394, type: 3}
   - {fileID: 3294564219125457607, guid: 8a8f57edf3523624eb9f886833e8e97a, type: 3}
   - {fileID: 3311311803080157842, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+--- !u!114 &475078352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 475078348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 148314a350c81a248ad509672adcb0b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyCarsList:
+  - {fileID: 1959030373088092, guid: fc4245223e4122142bb14239d44230ef, type: 3}
+  - {fileID: 1959030373088092, guid: 34941e62fdb557544ada8af1b5333ae0, type: 3}
+  - {fileID: 1646981259178978, guid: 0ae65270c30153049ab49eb3ebf070d6, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

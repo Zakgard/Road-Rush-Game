@@ -12,7 +12,6 @@ using UnityEngine;
     {
         _player = GameObject.FindGameObjectWithTag("Player");
     }
-
     
     private void LateUpdate()
     {

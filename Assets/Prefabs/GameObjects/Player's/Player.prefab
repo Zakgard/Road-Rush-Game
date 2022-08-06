@@ -110,4 +110,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 2523311588627270526}
-  _speed: 20
+  _force: 0
+  _horizontalInput: 0
+  _horizontalMultiplier: 10
