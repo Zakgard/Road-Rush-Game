@@ -5,6 +5,7 @@ public class GoToTheMainMenu : MonoBehaviour
 {
     public void OnLeaveButtonClick()
     {
-        SceneManager.LoadScene("Start Menu", LoadSceneMode.Single);
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene("Start Menu", LoadSceneMode.Single);        
     }
 }

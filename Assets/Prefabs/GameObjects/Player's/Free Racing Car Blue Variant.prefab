@@ -73,7 +73,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7495443279060062592, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_Constraints
-      value: 24
+      value: 124
       objectReference: {fileID: 0}
     - target: {fileID: 7495443279060062592, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_IsKinematic
@@ -88,6 +88,7 @@ PrefabInstance:
     - {fileID: -3955367445042417630, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
     - {fileID: -7669792534461848466, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
     - {fileID: 8346080619511980356, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+    - {fileID: 3514295440939977410, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
 --- !u!1 &7720726507797323357 stripped
 GameObject:
@@ -106,6 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ba49f2191ad934482bff3bcc9e3da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverBecauseOfLostHealthPoints: {fileID: 6578063842264413633}
 --- !u!114 &4461307172501465218
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -118,4 +120,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e33c98b64a9fe1b46bf17c8ef1692031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 7720726507797323357}
+  _playerGO: {fileID: 7720726507797323357}
+  speed: 5
+  _playersLeftBound: {x: -11, y: 0, z: -210}
+  _playersRightBound: {x: 11, y: 0, z: -210}
+--- !u!114 &6578063842264413633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7720726507797323357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa9880cd9490bf94995e517954e7485a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playersHealth: 30
+  _playerGO: {fileID: 7720726507797323357}

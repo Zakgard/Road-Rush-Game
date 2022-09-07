@@ -452,9 +452,9 @@ GameObject:
   - component: {fileID: 2792218741957914664}
   - component: {fileID: 7495443279060062592}
   - component: {fileID: -3955367445042417630}
-  - component: {fileID: -7669792534461848466}
   - component: {fileID: -4190208334052695277}
   - component: {fileID: 8346080619511980356}
+  - component: {fileID: 3514295440939977410}
   m_Layer: 0
   m_Name: Free Racing Car
   m_TagString: Player
@@ -493,7 +493,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 24
+  m_Constraints: 124
   m_CollisionDetection: 0
 --- !u!114 &-3955367445042417630
 MonoBehaviour:
@@ -507,20 +507,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e33c98b64a9fe1b46bf17c8ef1692031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 3311311803080157842}
---- !u!65 &-7669792534461848466
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3311311803080157842}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  _playerGO: {fileID: 3311311803080157842}
+  speed: 40
+  _playersLeftBound: {x: -11, y: 0, z: -210}
+  _playersRightBound: {x: 11, y: 0, z: 210}
 --- !u!64 &-4190208334052695277
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -547,6 +537,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ba49f2191ad934482bff3bcc9e3da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverBecauseOfLostHealthPoints: {fileID: 3514295440939977410}
+--- !u!114 &3514295440939977410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3311311803080157842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa9880cd9490bf94995e517954e7485a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playersHealth: 5
+  _playerGO: {fileID: 3311311803080157842}
+  tMP_Text: {fileID: 0}
 --- !u!1 &3962000127133956386
 GameObject:
   m_ObjectHideFlags: 0

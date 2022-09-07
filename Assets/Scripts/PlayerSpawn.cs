@@ -6,12 +6,7 @@ public class PlayerSpawn : MonoBehaviour
 
     private int _playerCarIndex= CarSelectorActivate.carINdex;
 
-    public static GameObject player;
-
-    private float[] _coordinatesList = new float[3]
-    {
-        -7,0,7
-    };
+    public static GameObject player;    
 
     private void Awake()
     {

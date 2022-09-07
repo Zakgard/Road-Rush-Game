@@ -12,12 +12,32 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2959467708922500008, guid: 9ec6a8fc6925acb4abc5500eeecb8270, type: 3}
     - target: {fileID: -3955367445042417630, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+      propertyPath: speed
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: -3955367445042417630, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: _force
       value: 24000
       objectReference: {fileID: 0}
     - target: {fileID: -3955367445042417630, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+      propertyPath: _playerGO
+      value: 
+      objectReference: {fileID: 6645616114513181105}
+    - target: {fileID: -3955367445042417630, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -3955367445042417630, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+      propertyPath: _playerRigidbody
+      value: 
+      objectReference: {fileID: 1858005172513079971}
+    - target: {fileID: -3955367445042417630, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+      propertyPath: _playersLeftBound
+      value: -11
+      objectReference: {fileID: 0}
+    - target: {fileID: -3955367445042417630, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+      propertyPath: _playersRightBound
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: -3955367445042417630, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: _horizontalMultiplier
@@ -75,20 +95,45 @@ PrefabInstance:
       propertyPath: m_Name
       value: Free Racing Car Purple Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3514295440939977410, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+      propertyPath: _playerGO
+      value: 
+      objectReference: {fileID: 6645616114513181105}
+    - target: {fileID: 3514295440939977410, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+      propertyPath: playersHealth
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7495443279060062592, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_Constraints
-      value: 24
+      value: 124
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2191245959367998922, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
     - {fileID: 8346080619511980356, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
     - {fileID: -4190208334052695277, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+    - {fileID: -7669792534461848466, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
 --- !u!1 &6645616114513181105 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3311311803080157842, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
   m_PrefabInstance: {fileID: 8200452591336674083}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &1858005172513079971 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 7495443279060062592, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+  m_PrefabInstance: {fileID: 8200452591336674083}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4686159491187431905 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3514295440939977410, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+  m_PrefabInstance: {fileID: 8200452591336674083}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6645616114513181105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa9880cd9490bf94995e517954e7485a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!64 &934956394267220033
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -115,3 +160,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06ba49f2191ad934482bff3bcc9e3da7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverBecauseOfLostHealthPoints: {fileID: 4686159491187431905}

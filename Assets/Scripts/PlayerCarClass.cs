@@ -3,8 +3,7 @@ public class PlayerCarClass
 {
     int carIndex;
     float acceleration;
-    int hitPoints;
-    
+    int hitPoints;   
 
     public PlayerCarClass(int carIndex, float acceleration, int hitPoints)
     {

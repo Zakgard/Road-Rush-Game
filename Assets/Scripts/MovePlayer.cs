@@ -3,26 +3,29 @@ using UnityEngine;
 public class MovePlayer : MonoBehaviour
 {
     [Header("Объект игрок")]
-    [SerializeField] private GameObject _player;
+    [SerializeField] private GameObject _playerGO;
 
-    private Rigidbody _playerRigidbody;   
+    private Rigidbody _playerRigidbody;
+    public float speed;
+
+    [SerializeField] private Vector3 _playersLeftBound=new Vector3(-11,0,-210);
+    [SerializeField] private Vector3 _playersRightBound = new Vector3(11, 0, -210);
+    
 
     private void Start()
     {
-        _playerRigidbody = GetComponent<Rigidbody>();
+        _playerRigidbody = _playerGO.GetComponent<Rigidbody>();
     }
-
     private void FixedUpdate()
-    {        
-        _playerRigidbody.MovePosition(_playerRigidbody.position + _movementVector);        
+    {                
+        CheckIfPlayerOutOfBounds();       
     }
-
-    private Vector3 _movementVector
-    {
-        get
-        {
-            var horizontal = Input.GetAxis("Horizontal");           
-            return new Vector3(horizontal*0.5f, 0.0f, 0);
-        }
-    }
+   
+    private void CheckIfPlayerOutOfBounds()
+    {       
+        if(_playerRigidbody.position.x < _playersLeftBound.x)
+            _playerRigidbody.MovePosition(_playersLeftBound);
+        if(_playerRigidbody.position.x > _playersRightBound.x)
+            _playerRigidbody.MovePosition(_playersRightBound);
+    }         
 }

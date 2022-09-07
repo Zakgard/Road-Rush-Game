@@ -174,6 +174,7 @@ GameObject:
   - component: {fileID: 5622012911801784205}
   - component: {fileID: 1044785755000299946}
   - component: {fileID: 5705332065896155723}
+  - component: {fileID: 7574449046563505658}
   m_Layer: 0
   m_Name: Car_1
   m_TagString: Enemy
@@ -243,6 +244,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 209fadb19c7c1f149830b00ad9d0c764, type: 3}
+--- !u!114 &7574449046563505658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646981259178978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7185193af56c0e48be9989814895783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyGO: {fileID: 1646981259178978}
+  _destructionBoundZOfEnemy: -250
 --- !u!1 &1664593040851034
 GameObject:
   m_ObjectHideFlags: 0

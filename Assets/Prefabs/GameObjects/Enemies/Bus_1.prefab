@@ -336,6 +336,7 @@ GameObject:
   - component: {fileID: 5061830186815530498}
   - component: {fileID: 1997040969888078075}
   - component: {fileID: 5243828002951750148}
+  - component: {fileID: 7215469862859551382}
   m_Layer: 0
   m_Name: Bus_1
   m_TagString: Enemy
@@ -405,6 +406,20 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 7f4f24cb528cb884a874e5266f87c831, type: 3}
+--- !u!114 &7215469862859551382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959030373088092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7185193af56c0e48be9989814895783, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enemyGO: {fileID: 1959030373088092}
+  _destructionBoundZOfEnemy: -250
 --- !u!1 &1984030507710860
 GameObject:
   m_ObjectHideFlags: 0

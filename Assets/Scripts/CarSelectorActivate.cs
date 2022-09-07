@@ -5,7 +5,7 @@ public class CarSelectorActivate : MonoBehaviour
     [Header("Меню выбора машин")]
     [SerializeField] private GameObject rectTransform;
 
-    public static int carINdex;
+    public static int carINdex { get; private set; }
 
     [Header("Пункты меню, которые станут неактивными", order = 5)]
     [SerializeField] private GameObject _startButton;
@@ -14,8 +14,8 @@ public class CarSelectorActivate : MonoBehaviour
     [SerializeField] private GameObject _creditsButton;
     [SerializeField] private GameObject _exitButton;
 
-    [SerializeField] private 
-    void OnButtonClick()
+    
+    public void OnButtonClick()
     {
         rectTransform.SetActive(true);
         _startButton.SetActive(false);
@@ -27,18 +27,14 @@ public class CarSelectorActivate : MonoBehaviour
 
     public void OnCarSelect(int index)
     {
-        carINdex = index;
+        carINdex = 0;
         rectTransform.SetActive(false);
         _startButton.SetActive(true);
         _settingsButton.SetActive(true);
         _creditsButton.SetActive(true);
         _exitButton.SetActive(true);
         _changeCarButton.SetActive(true);
-        Debug.LogFormat("{0} car selected!", index);
-    }
-
-    public void SetCarIndex(int index)
-    {
-        
-    }
+        carINdex = index;
+        Debug.LogFormat("{0} car selected!", index);        
+    }       
 }
