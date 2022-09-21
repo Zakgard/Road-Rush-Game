@@ -16,7 +16,7 @@ public class HealthPointsDisplay : MonoBehaviour
     }
     public void ShowHPOnPanel(float hp)
     {
-        _healthPointDisplay.text = "Your HP:" + hp;
+        _healthPointDisplay.text = "Ваши ОЗ: " + hp;
     }
 
     public void OpenTheGameOverPanel()

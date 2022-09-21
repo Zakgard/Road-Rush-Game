@@ -11,10 +11,9 @@ public class GameOverBecauseOfLostHealthPoints : MonoBehaviour
         if (playersHealth <= 0)
         {
             Debug.Log("Game Over!");
+            PlayLevel1Sounds.Instance.PlayGameOverSound();
             Destroy(_playerGO);
             HealthPointsDisplay.Instance.OpenTheGameOverPanel();
-        }
-            
-        
+        }                    
     }
 }

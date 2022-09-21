@@ -6,11 +6,16 @@ public class DetectingCollisionBetweenPlayerAndEnemyCars : MonoBehaviour
     private float _hp;
    
     private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log($"Collision with {collision.gameObject.name}");
-        _hp=gameOverBecauseOfLostHealthPoints.playersHealth -= 1;        
-        Destroy(collision.gameObject);
-        Handheld.Vibrate();
-        HealthPointsDisplay.Instance.ShowHPOnPanel(_hp);
+    {        
+        if (collision.gameObject.tag == "Enemy")
+        {
+            _hp = gameOverBecauseOfLostHealthPoints.playersHealth -= 1;
+            Destroy(collision.gameObject);           
+            HealthPointsDisplay.Instance.ShowHPOnPanel(_hp);
+            if(SettingVibration.isVibrationTurnedOn==true)
+                Handheld.Vibrate();
+        }
+               
     }
+
 }

@@ -47,9 +47,25 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: c4c2ee3e832cffd48bb9d156c2b21376, type: 2}
+    - target: {fileID: 2326525047965194226, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+      propertyPath: _carSpeed
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 2792218741957914664, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2792218741957914664, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2792218741957914664, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2792218741957914664, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 2792218741957914664, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -112,6 +128,8 @@ PrefabInstance:
     - {fileID: 8346080619511980356, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
     - {fileID: -4190208334052695277, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
     - {fileID: -7669792534461848466, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+    - {fileID: -7686946780260353286, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+    - {fileID: 608723170152035843, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
 --- !u!1 &3294564219125457607 stripped
 GameObject:
@@ -148,6 +166,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &-6180053950599927636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3294564219125457607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6dda2245e3c994a8fd5a71d65b2d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameOverBecauseOfLostHealthPoints: {fileID: 3497547777528382103}
 --- !u!114 &-5845082091678564618
 MonoBehaviour:
   m_ObjectHideFlags: 0

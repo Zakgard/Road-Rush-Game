@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class SettingVibration : MonoBehaviour
 {
     [SerializeField] private Toggle _vibrationToggle;
-    public bool isVibrationTurnedOn;
+    public static bool isVibrationTurnedOn=true;
 
     public void OnToggleValueChange()
     {

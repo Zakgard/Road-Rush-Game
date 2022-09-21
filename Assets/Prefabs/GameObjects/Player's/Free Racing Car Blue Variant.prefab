@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d2344366b80fe3d4f886ec412e0174fa, type: 2}
+    - target: {fileID: 2326525047965194226, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+      propertyPath: _carSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2792218741957914664, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -69,11 +73,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7495443279060062592, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_UseGravity
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7495443279060062592, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_Constraints
       value: 124
+      objectReference: {fileID: 0}
+    - target: {fileID: 7495443279060062592, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7495443279060062592, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
       propertyPath: m_IsKinematic
@@ -89,6 +97,8 @@ PrefabInstance:
     - {fileID: -7669792534461848466, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
     - {fileID: 8346080619511980356, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
     - {fileID: 3514295440939977410, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+    - {fileID: -7686946780260353286, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
+    - {fileID: 608723170152035843, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 133308cdb8794744caaef026bde9e1f0, type: 3}
 --- !u!1 &7720726507797323357 stripped
 GameObject:
@@ -108,6 +118,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverBecauseOfLostHealthPoints: {fileID: 6578063842264413633}
+--- !u!114 &3874389647024707946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7720726507797323357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a6dda2245e3c994a8fd5a71d65b2d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gameOverBecauseOfLostHealthPoints: {fileID: 6578063842264413633}
 --- !u!114 &4461307172501465218
 MonoBehaviour:
   m_ObjectHideFlags: 0
